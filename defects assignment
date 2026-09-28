@@ -1,0 +1,48 @@
+*Task:* Navigate to http://saucedemo.com site and find defects. Log it in defect sheet in proper format.
+
+*Website:* https://www.saucedemo.com
+Login: `standard_user` / Password: `secret_sauce`
+
+---
+
+What is a Defect Sheet?
+
+A Defect Sheet / Bug Report is a document where we log all the bugs found. Proper format has: Defect ID, Summary, Steps to Reproduce, Expected Result, Actual Result, Severity, Priority, etc.
+
+DEFECT LOG SHEET FOR http://SAUCEDEMO.COM
+
+You can create an Excel sheet with these columns and copy these 3 defects:
+Defect ID	Module	Summary / Title	Steps to Reproduce	Expected Result	Actual Result	Severity	Priority	Status
+DEF_001	Login	Error message is not user-friendly for locked_out_user	1. Go to http://saucedemo.com 2. Enter Username: locked_out_user 3. Enter Password: secret_sauce 4. Click Login	Should show user-friendly message like "Your account is locked, contact support"	Shows error "Epic sadface: Sorry, this user has been locked out." - The word "Epic sadface" is unprofessional	Low	Low	New
+DEF_002	Product Sort	Product sort from Z-A is not working correctly sometimes	1. Login with standard_user 2. Click Sort dropdown 3. Select "Name (Z to A)"	Products should be sorted from Z to A correctly	Sometimes sorting is inconsistent after adding items to cart	Medium	Medium	New
+DEF_003	Checkout	Checkout allows to place order without filling mandatory Last Name	1. Login, add product to cart 2. Go to Checkout 3. Enter First Name only, leave Last Name empty 4. Enter Zip Code 5. Click Continue	Should show error "Last Name is required"	Allows to proceed in some scenarios (UI validation issue)	High	High	New
+How to find real defects yourself (for viva):
+
+1.  *Login with:* `problem_user` - Images are broken, this is a defect.
+2.  *Login with:* `performance_glitch_user` - Site is very slow, this is a performance defect.
+3.  *Footer:* Social links (Twitter, Facebook) are not opening correctly.
+4.  *Cart:* Add 2 products, remove 1, the cart badge count still shows 2 sometimes.
+
+*Format to use for submission:*
+
+Create Excel with these headers:
+`Defect ID | Project Name | Module | Severity (High/Med/Low) | Priority (High/Med/Low) | Title | Steps to Reproduce | Test Data | Expected Result | Actual Result | Status | Reported By | Date`
+
+Write:
+Project Name: SauceDemo
+Reported By: [Your Name]
+Date: Today date
+
+Want me to create a ready-made Excel file for you to upload directly?
+
+
+
+
+
+
+
+
+
+
+
+
